@@ -1,0 +1,35 @@
+pipeline {
+    agent any 
+    stages { 
+        stage('CleanUp stage'){
+            steps {
+               bat 'echo CleanUp stage'
+            }
+        }
+        stage('Git checkout stage'){
+            steps {
+               bat 'echo Git checkout stage'
+            }
+        }
+        stage('Restore package stage'){
+            steps {
+               bat 'echo Restore package stage'
+            }
+        }
+        stage('Build Stage'){
+            steps {
+               bat 'echo Build stage'
+            }
+        }
+        stage('Test Execution stage'){
+            steps {
+               bat 'echo Test execution started'
+               bat 'echo Test execution completed'
+            }
+        }
+        
+    }
+        
+    
+    
+}
